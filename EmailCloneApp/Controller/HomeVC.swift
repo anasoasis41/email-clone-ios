@@ -10,6 +10,13 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var markUnreadButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

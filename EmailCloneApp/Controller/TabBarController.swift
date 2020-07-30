@@ -34,7 +34,7 @@ class TabBarController: UITabBarController {
         let groups = ViewController()
         groups.tabBarItem = UITabBarItem(
             title: "",
-            image: UIImage(systemName: "staroflife") ,
+            image: UIImage(systemName: "circle.grid.hex") ,
             tag: 0
         )
         let people = ViewController()
