@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  EmailCloneApp
 //
 //  Created by Anas Riahi on 7/30/20.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+
+        
     }
 
-
 }
-
