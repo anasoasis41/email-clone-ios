@@ -13,7 +13,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let home = ViewController()
+        let home = HomeVC()
         home.tabBarItem = UITabBarItem(
             title: "",
             image: UIImage(systemName: "tray.fill") ,

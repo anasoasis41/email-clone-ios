@@ -16,11 +16,14 @@ class HomeVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
    
+    var users = [User]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        DataParser().get() { (users) in
+            print(users)
+        }
         
     }
-
 }
