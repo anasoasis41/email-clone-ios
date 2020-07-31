@@ -12,39 +12,21 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let home = HomeVC()
-        home.tabBarItem = UITabBarItem(
-            title: "",
-            image: UIImage(systemName: "tray.fill") ,
-            tag: 0
-        )
-        let event = ViewController()
-        event.tabBarItem = UITabBarItem(
-            title: "",
-            image: UIImage(systemName: "clock") ,
-            tag: 0
-        )
-        let edit = ViewController()
-        edit.tabBarItem = UITabBarItem(
-            title: "",
-            image: UIImage(systemName: "pencil.circle.fill") ,
-            tag: 0
-        )
-        let groups = ViewController()
-        groups.tabBarItem = UITabBarItem(
-            title: "",
-            image: UIImage(systemName: "circle.grid.hex") ,
-            tag: 0
-        )
-        let people = ViewController()
-        people.tabBarItem = UITabBarItem(
-            title: "",
-            image: UIImage(systemName: "person.2") ,
-            tag: 0
-        )
         
-        viewControllers = [home, event, edit, groups, people]
+        viewControllers = [
+            setController(HomeVC(), title: "", image: "tray.fill", tag: 0),
+            setController(ViewController(), title: "", image: "clock", tag: 1),
+            setController(ViewController(), title: "", image: "pencil.circle.fill", tag: 2),
+            setController(ViewController(), title: "", image: "circle.grid.hex", tag: 3),
+            setController(ViewController(), title: "", image: "person.2", tag: 4),
+        ]
     }
 
+    func setController(_ controller: UIViewController, title: String, image: String, tag: Int) -> UIViewController {
+        controller.tabBarItem = UITabBarItem(
+        title: title,
+        image: UIImage(systemName: image),
+        tag: tag)
+        return controller
+    }
 }
