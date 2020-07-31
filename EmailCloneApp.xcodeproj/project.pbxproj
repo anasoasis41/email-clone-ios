@@ -17,6 +17,11 @@
 		CBCF9A1924D345CE0012935A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF9A1724D345CE0012935A /* HomeVC.xib */; };
 		CBCF9A1B24D35A360012935A /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF9A1A24D35A360012935A /* DataParser.swift */; };
 		CBCF9A1D24D35AF90012935A /* DataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF9A1C24D35AF90012935A /* DataResult.swift */; };
+		CBCF9A2024D4B54C0012935A /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF9A1E24D4B54C0012935A /* HomeViewCell.swift */; };
+		CBCF9A2124D4B54C0012935A /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF9A1F24D4B54C0012935A /* HomeViewCell.xib */; };
+		CBCF9A2424D4B6250012935A /* UserCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF9A2224D4B6250012935A /* UserCollectionCell.swift */; };
+		CBCF9A2524D4B6250012935A /* UserCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF9A2324D4B6250012935A /* UserCollectionCell.xib */; };
+		CBCF9A2724D4C52D0012935A /* extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF9A2624D4C52D0012935A /* extension+UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		CBCF9A1724D345CE0012935A /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		CBCF9A1A24D35A360012935A /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		CBCF9A1C24D35AF90012935A /* DataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResult.swift; sourceTree = "<group>"; };
+		CBCF9A1E24D4B54C0012935A /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		CBCF9A1F24D4B54C0012935A /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		CBCF9A2224D4B6250012935A /* UserCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionCell.swift; sourceTree = "<group>"; };
+		CBCF9A2324D4B6250012935A /* UserCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCollectionCell.xib; sourceTree = "<group>"; };
+		CBCF9A2624D4C52D0012935A /* extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImageView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,11 @@
 		CB5A3E6A24D31C82000C3CDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CBCF9A1E24D4B54C0012935A /* HomeViewCell.swift */,
+				CBCF9A1F24D4B54C0012935A /* HomeViewCell.xib */,
+				CBCF9A2224D4B6250012935A /* UserCollectionCell.swift */,
+				CBCF9A2324D4B6250012935A /* UserCollectionCell.xib */,
+				CBCF9A2624D4C52D0012935A /* extension+UIImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,7 +176,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCF9A2524D4B6250012935A /* UserCollectionCell.xib in Resources */,
 				CB5A3E6224D30031000C3CDF /* LaunchScreen.storyboard in Resources */,
+				CBCF9A2124D4B54C0012935A /* HomeViewCell.xib in Resources */,
 				CBCF9A1924D345CE0012935A /* HomeVC.xib in Resources */,
 				CB5A3E5F24D30031000C3CDF /* Assets.xcassets in Resources */,
 			);
@@ -175,11 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5A3E6D24D31CC2000C3CDF /* TabBarController.swift in Sources */,
+				CBCF9A2024D4B54C0012935A /* HomeViewCell.swift in Sources */,
 				CBCF9A1824D345CE0012935A /* HomeVC.swift in Sources */,
 				CBCF9A1B24D35A360012935A /* DataParser.swift in Sources */,
 				CB5A3E5624D30030000C3CDF /* AppDelegate.swift in Sources */,
 				CB5A3E6F24D340A3000C3CDF /* ViewController.swift in Sources */,
+				CBCF9A2424D4B6250012935A /* UserCollectionCell.swift in Sources */,
 				CB5A3E5824D30030000C3CDF /* SceneDelegate.swift in Sources */,
+				CBCF9A2724D4C52D0012935A /* extension+UIImageView.swift in Sources */,
 				CBCF9A1D24D35AF90012935A /* DataResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
