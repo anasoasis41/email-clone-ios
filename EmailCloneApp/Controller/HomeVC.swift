@@ -51,7 +51,13 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "emailTableCell") as? HomeViewCell {
             let user = users[indexPath.row]
-            cell.setup(user)
+            
+            if indexPath.row == 0 {
+                cell.setupCollection(self.users)
+            } else {
+                cell.setupTableView(user)
+            }
+            
             return cell
         }
         return UITableViewCell()

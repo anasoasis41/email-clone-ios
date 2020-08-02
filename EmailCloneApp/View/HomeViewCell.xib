@@ -16,6 +16,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="325" height="96"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-Xx-1PN">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="96"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EKr-Rz-8it">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="98W-Qz-Wka">
                         <rect key="frame" x="20" y="23" width="50" height="50"/>
                         <constraints>
@@ -37,9 +47,13 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Jg4-Xx-1PN" secondAttribute="bottom" id="1Co-rx-65V"/>
+                    <constraint firstItem="Jg4-Xx-1PN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="45z-TO-WeN"/>
                     <constraint firstItem="efI-H7-x0g" firstAttribute="top" secondItem="vLR-3O-2ye" secondAttribute="bottom" constant="4" id="5Oo-o8-tFV"/>
                     <constraint firstItem="vLR-3O-2ye" firstAttribute="leading" secondItem="98W-Qz-Wka" secondAttribute="trailing" constant="8" id="OxP-d1-8Wt"/>
                     <constraint firstItem="98W-Qz-Wka" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UmD-a5-dgQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Jg4-Xx-1PN" secondAttribute="trailing" id="Y5f-f2-Q56"/>
+                    <constraint firstItem="Jg4-Xx-1PN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YaP-Ok-aoi"/>
                     <constraint firstItem="vLR-3O-2ye" firstAttribute="top" secondItem="98W-Qz-Wka" secondAttribute="top" constant="7" id="Yck-QV-o3J"/>
                     <constraint firstAttribute="trailing" secondItem="vLR-3O-2ye" secondAttribute="trailing" constant="20" id="tm0-ca-cn3"/>
                     <constraint firstAttribute="trailing" secondItem="efI-H7-x0g" secondAttribute="trailing" constant="20" id="vkG-AP-0wb"/>
@@ -49,6 +63,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="collectionView" destination="Jg4-Xx-1PN" id="Eow-6D-i82"/>
                 <outlet property="subTitleLabel" destination="efI-H7-x0g" id="Kb7-T3-v0g"/>
                 <outlet property="userImage" destination="98W-Qz-Wka" id="Pro-IB-GGQ"/>
                 <outlet property="usernameLabel" destination="vLR-3O-2ye" id="BZu-5k-UmX"/>
