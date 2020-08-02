@@ -37,7 +37,7 @@ class HomeViewCell: UITableViewCell {
         
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
-        flowLayout.itemSize = CGSize(width: 150, height: 180)
+        flowLayout.itemSize = CGSize(width: 80, height: 80)
         flowLayout.minimumLineSpacing = 2.0
         flowLayout.minimumInteritemSpacing = 5.0
         self.collectionView.collectionViewLayout = flowLayout
@@ -73,7 +73,10 @@ extension HomeViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UI
     // Set the data for each collection cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "usersCollectionCell", for: indexPath) as? UserCollectionCell {
-            cell.userNameLbl.text = users[indexPath.row].username
+            let user = users[indexPath.row]
+            cell.userImage.load(user.image)
+            cell.userImage.setRounded()
+            cell.userNameLbl.text = user.username
             return cell
         }
         return UICollectionViewCell()
@@ -81,6 +84,6 @@ extension HomeViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UI
     
     // Add spaces at the beginning and the end of the collection view
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
     }
 }

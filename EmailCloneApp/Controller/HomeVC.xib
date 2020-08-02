@@ -25,14 +25,14 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oPN-Q4-IPI">
-                            <rect key="frame" x="10" y="10" width="40" height="40"/>
+                            <rect key="frame" x="20" y="10" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="keh-Z2-5iw"/>
                                 <constraint firstAttribute="height" constant="40" id="uyP-xy-c4c"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVw-yp-yJD">
-                            <rect key="frame" x="58" y="18.5" width="64" height="23"/>
+                            <rect key="frame" x="68" y="18.5" width="64" height="23"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                     <constraints>
                         <constraint firstItem="qsb-g5-m71" firstAttribute="centerY" secondItem="ztD-VG-hqL" secondAttribute="centerY" id="2jq-3F-9d3"/>
                         <constraint firstItem="sVw-yp-yJD" firstAttribute="centerY" secondItem="ztD-VG-hqL" secondAttribute="centerY" id="2q9-Cv-kHc"/>
-                        <constraint firstItem="oPN-Q4-IPI" firstAttribute="leading" secondItem="ztD-VG-hqL" secondAttribute="leading" constant="10" id="3RG-Gq-b5M"/>
+                        <constraint firstItem="oPN-Q4-IPI" firstAttribute="leading" secondItem="ztD-VG-hqL" secondAttribute="leading" constant="20" id="3RG-Gq-b5M"/>
                         <constraint firstItem="oPN-Q4-IPI" firstAttribute="centerY" secondItem="ztD-VG-hqL" secondAttribute="centerY" id="Jao-TK-Gpu"/>
                         <constraint firstAttribute="trailing" secondItem="4EN-yj-IHu" secondAttribute="trailing" constant="10" id="Wah-bs-J4U"/>
                         <constraint firstAttribute="height" constant="60" id="m3a-MR-0VZ"/>

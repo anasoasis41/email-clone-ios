@@ -10,30 +10,40 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="usersCollectionCell" id="gTV-IL-0wX" customClass="UserCollectionCell" customModule="EmailCloneApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="101" height="86"/>
+            <rect key="frame" x="0.0" y="0.0" width="112" height="103"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="101" height="86"/>
+                <rect key="frame" x="0.0" y="0.0" width="112" height="103"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFs-z2-4Hg">
-                        <rect key="frame" x="29.5" y="32.5" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nt0-yA-NLD">
+                        <rect key="frame" x="36" y="6" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="aPS-qP-jDw"/>
+                            <constraint firstAttribute="height" constant="40" id="zcJ-xq-Nat"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="luglg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFs-z2-4Hg">
+                        <rect key="frame" x="41" y="54" width="30" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="vFs-z2-4Hg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="AEv-Vd-f83"/>
-                <constraint firstItem="vFs-z2-4Hg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="BNK-6m-PP8"/>
+                <constraint firstItem="vFs-z2-4Hg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="KdA-c1-jXT"/>
+                <constraint firstItem="vFs-z2-4Hg" firstAttribute="top" secondItem="Nt0-yA-NLD" secondAttribute="bottom" constant="8" id="Ua6-v3-pxc"/>
+                <constraint firstItem="Nt0-yA-NLD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="s4W-fN-b6Q"/>
+                <constraint firstItem="Nt0-yA-NLD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="t5K-FG-2Nx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="101" height="86"/>
+            <size key="customSize" width="112" height="103"/>
             <connections>
+                <outlet property="userImage" destination="Nt0-yA-NLD" id="Z1T-c6-qP8"/>
                 <outlet property="userNameLbl" destination="vFs-z2-4Hg" id="HkY-Ox-pZC"/>
             </connections>
-            <point key="canvasLocation" x="94.927536231884062" y="104.46428571428571"/>
+            <point key="canvasLocation" x="81.159420289855078" y="110.15625"/>
         </collectionViewCell>
     </objects>
 </document>

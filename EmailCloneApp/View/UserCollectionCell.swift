@@ -10,6 +10,7 @@ import UIKit
 
 class UserCollectionCell: UICollectionViewCell {
     
+    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userNameLbl: UILabel!
     
     override func awakeFromNib() {
