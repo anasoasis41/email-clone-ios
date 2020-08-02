@@ -10,6 +10,7 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var navView: UIView!
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var markUnreadButton: UIButton!
@@ -20,6 +21,8 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
@@ -33,8 +36,14 @@ class HomeVC: UIViewController {
             self.userImage.setRounded()
             self.tableView.reloadData()
         }
-        
-        print(self.users)
+    }
+    
+    fileprivate func setupUI() {
+        // Add shadow to bottom of navView
+        navView.layer.shadowColor = UIColor.black.cgColor
+        navView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        navView.layer.shadowOpacity = 0.2
+        navView.layer.shadowRadius = 0.5
     }
 }
 

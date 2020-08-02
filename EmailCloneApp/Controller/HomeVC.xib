@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="EmailCloneApp" customModuleProvider="target">
             <connections>
                 <outlet property="markUnreadButton" destination="qsb-g5-m71" id="fU1-NP-FvE"/>
+                <outlet property="navView" destination="ztD-VG-hqL" id="y76-Od-dg6"/>
                 <outlet property="searchButton" destination="4EN-yj-IHu" id="ZYq-yw-Ota"/>
                 <outlet property="tableView" destination="QPz-sn-VyA" id="Z0o-WM-sxz"/>
                 <outlet property="userImage" destination="oPN-Q4-IPI" id="2oo-xT-Sws"/>
