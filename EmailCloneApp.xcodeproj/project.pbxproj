@@ -22,6 +22,8 @@
 		CBCF9A2424D4B6250012935A /* UserCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF9A2224D4B6250012935A /* UserCollectionCell.swift */; };
 		CBCF9A2524D4B6250012935A /* UserCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCF9A2324D4B6250012935A /* UserCollectionCell.xib */; };
 		CBCF9A2724D4C52D0012935A /* extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF9A2624D4C52D0012935A /* extension+UIImageView.swift */; };
+		CBE07E7624DC8CDA008E9FA2 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE07E7424DC8CDA008E9FA2 /* SearchController.swift */; };
+		CBE07E7724DC8CDA008E9FA2 /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE07E7524DC8CDA008E9FA2 /* SearchController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		CBCF9A2224D4B6250012935A /* UserCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionCell.swift; sourceTree = "<group>"; };
 		CBCF9A2324D4B6250012935A /* UserCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCollectionCell.xib; sourceTree = "<group>"; };
 		CBCF9A2624D4C52D0012935A /* extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImageView.swift"; sourceTree = "<group>"; };
+		CBE07E7424DC8CDA008E9FA2 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		CBE07E7524DC8CDA008E9FA2 /* SearchController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				CB5A3E6E24D340A3000C3CDF /* ViewController.swift */,
 				CBCF9A1624D345CE0012935A /* HomeVC.swift */,
 				CBCF9A1724D345CE0012935A /* HomeVC.xib */,
+				CBE07E7424DC8CDA008E9FA2 /* SearchController.swift */,
+				CBE07E7524DC8CDA008E9FA2 /* SearchController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBCF9A2524D4B6250012935A /* UserCollectionCell.xib in Resources */,
+				CBE07E7724DC8CDA008E9FA2 /* SearchController.xib in Resources */,
 				CB5A3E6224D30031000C3CDF /* LaunchScreen.storyboard in Resources */,
 				CBCF9A2124D4B54C0012935A /* HomeViewCell.xib in Resources */,
 				CBCF9A1924D345CE0012935A /* HomeVC.xib in Resources */,
@@ -199,6 +206,7 @@
 				CB5A3E6F24D340A3000C3CDF /* ViewController.swift in Sources */,
 				CBCF9A2424D4B6250012935A /* UserCollectionCell.swift in Sources */,
 				CB5A3E5824D30030000C3CDF /* SceneDelegate.swift in Sources */,
+				CBE07E7624DC8CDA008E9FA2 /* SearchController.swift in Sources */,
 				CBCF9A2724D4C52D0012935A /* extension+UIImageView.swift in Sources */,
 				CBCF9A1D24D35AF90012935A /* DataResult.swift in Sources */,
 			);

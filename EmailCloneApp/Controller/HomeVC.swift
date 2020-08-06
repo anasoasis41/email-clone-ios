@@ -36,8 +36,16 @@ class HomeVC: UIViewController {
             self.userImage.setRounded()
             self.tableView.reloadData()
         }
+        
+        searchButton.addTarget(self, action: #selector(self.pressed), for: .touchUpInside)
     }
     
+    @objc func pressed(sender: UIButton!) {
+        let controller = SearchController()
+        controller.users = self.users
+        self.present(controller, animated: true, completion: nil)
+    }
+
     fileprivate func setupUI() {
         // Add shadow to bottom of navView
         navView.layer.shadowColor = UIColor.black.cgColor
@@ -45,6 +53,7 @@ class HomeVC: UIViewController {
         navView.layer.shadowOpacity = 0.2
         navView.layer.shadowRadius = 0.5
     }
+    
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
@@ -71,4 +80,5 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         }
         return UITableViewCell()
     }
+
 }
