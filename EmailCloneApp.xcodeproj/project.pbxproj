@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB43E38724DDD674007747BF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43E38524DDD674007747BF /* SearchCell.swift */; };
+		CB43E38824DDD674007747BF /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB43E38624DDD674007747BF /* SearchCell.xib */; };
 		CB5A3E5624D30030000C3CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3E5524D30030000C3CDF /* AppDelegate.swift */; };
 		CB5A3E5824D30030000C3CDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3E5724D30030000C3CDF /* SceneDelegate.swift */; };
 		CB5A3E5F24D30031000C3CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5A3E5E24D30031000C3CDF /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB43E38524DDD674007747BF /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		CB43E38624DDD674007747BF /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		CB5A3E5224D30030000C3CDF /* EmailCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5A3E5524D30030000C3CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5A3E5724D30030000C3CDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				CBCF9A2224D4B6250012935A /* UserCollectionCell.swift */,
 				CBCF9A2324D4B6250012935A /* UserCollectionCell.xib */,
 				CBCF9A2624D4C52D0012935A /* extension+UIImageView.swift */,
+				CB43E38524DDD674007747BF /* SearchCell.swift */,
+				CB43E38624DDD674007747BF /* SearchCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 				CBE07E7724DC8CDA008E9FA2 /* SearchController.xib in Resources */,
 				CB5A3E6224D30031000C3CDF /* LaunchScreen.storyboard in Resources */,
 				CBCF9A2124D4B54C0012935A /* HomeViewCell.xib in Resources */,
+				CB43E38824DDD674007747BF /* SearchCell.xib in Resources */,
 				CBCF9A1924D345CE0012935A /* HomeVC.xib in Resources */,
 				CB5A3E5F24D30031000C3CDF /* Assets.xcassets in Resources */,
 			);
@@ -199,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5A3E6D24D31CC2000C3CDF /* TabBarController.swift in Sources */,
+				CB43E38724DDD674007747BF /* SearchCell.swift in Sources */,
 				CBCF9A2024D4B54C0012935A /* HomeViewCell.swift in Sources */,
 				CBCF9A1824D345CE0012935A /* HomeVC.swift in Sources */,
 				CBCF9A1B24D35A360012935A /* DataParser.swift in Sources */,

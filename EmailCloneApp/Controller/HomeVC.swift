@@ -36,7 +36,6 @@ class HomeVC: UIViewController {
             self.userImage.setRounded()
             self.tableView.reloadData()
         }
-        
         searchButton.addTarget(self, action: #selector(self.pressed), for: .touchUpInside)
     }
     
