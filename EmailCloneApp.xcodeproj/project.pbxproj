@@ -12,6 +12,8 @@
 		CB582C0A24E471B80070060A /* GroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB582C0824E471B80070060A /* GroupsController.swift */; };
 		CB582C0B24E471B80070060A /* GroupsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB582C0924E471B80070060A /* GroupsController.xib */; };
 		CB582C0D24E478850070060A /* DataGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB582C0C24E478850070060A /* DataGroups.swift */; };
+		CB582C1124E47E770070060A /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB582C0F24E47E770070060A /* GroupsCell.swift */; };
+		CB582C1224E47E770070060A /* GroupsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB582C1024E47E770070060A /* GroupsCell.xib */; };
 		CB5A3E5624D30030000C3CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3E5524D30030000C3CDF /* AppDelegate.swift */; };
 		CB5A3E5824D30030000C3CDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3E5724D30030000C3CDF /* SceneDelegate.swift */; };
 		CB5A3E5F24D30031000C3CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5A3E5E24D30031000C3CDF /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 		CB582C0824E471B80070060A /* GroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsController.swift; sourceTree = "<group>"; };
 		CB582C0924E471B80070060A /* GroupsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsController.xib; sourceTree = "<group>"; };
 		CB582C0C24E478850070060A /* DataGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGroups.swift; sourceTree = "<group>"; };
+		CB582C0F24E47E770070060A /* GroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
+		CB582C1024E47E770070060A /* GroupsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsCell.xib; sourceTree = "<group>"; };
 		CB5A3E5224D30030000C3CDF /* EmailCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5A3E5524D30030000C3CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5A3E5724D30030000C3CDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 				CB582C0924E471B80070060A /* GroupsController.xib */,
 			);
 			path = Groups;
+			sourceTree = "<group>";
+		};
+		CB582C0E24E47E4D0070060A /* groups */ = {
+			isa = PBXGroup;
+			children = (
+				CB582C0F24E47E770070060A /* GroupsCell.swift */,
+				CB582C1024E47E770070060A /* GroupsCell.xib */,
+			);
+			path = groups;
 			sourceTree = "<group>";
 		};
 		CB5A3E4924D30030000C3CDF = {
@@ -126,6 +139,7 @@
 		CB5A3E6A24D31C82000C3CDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CB582C0E24E47E4D0070060A /* groups */,
 				CBCF9A1E24D4B54C0012935A /* HomeViewCell.swift */,
 				CBCF9A1F24D4B54C0012935A /* HomeViewCell.xib */,
 				CBCF9A2224D4B6250012935A /* UserCollectionCell.swift */,
@@ -211,6 +225,7 @@
 				CB5A3E6224D30031000C3CDF /* LaunchScreen.storyboard in Resources */,
 				CBCF9A2124D4B54C0012935A /* HomeViewCell.xib in Resources */,
 				CB43E38824DDD674007747BF /* SearchCell.xib in Resources */,
+				CB582C1224E47E770070060A /* GroupsCell.xib in Resources */,
 				CBCF9A1924D345CE0012935A /* HomeVC.xib in Resources */,
 				CB5A3E5F24D30031000C3CDF /* Assets.xcassets in Resources */,
 			);
@@ -223,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB582C1124E47E770070060A /* GroupsCell.swift in Sources */,
 				CB5A3E6D24D31CC2000C3CDF /* TabBarController.swift in Sources */,
 				CB43E38724DDD674007747BF /* SearchCell.swift in Sources */,
 				CB582C0A24E471B80070060A /* GroupsController.swift in Sources */,
