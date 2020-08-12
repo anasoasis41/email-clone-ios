@@ -6,7 +6,7 @@
 //  Copyright © 2020 Anas Riahi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct User: Decodable {
     var username: String
@@ -16,4 +16,9 @@ struct User: Decodable {
     var description: String
     var image: String
     var sendingDate: String
+}
+
+struct Groups {
+    var image: UIImage
+    var name: String
 }

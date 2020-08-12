@@ -17,7 +17,7 @@ class TabBarController: UITabBarController {
             setController(HomeVC(), title: "", image: "tray.fill", tag: 0),
             setController(ViewController(), title: "", image: "clock", tag: 1),
             setController(ViewController(), title: "", image: "pencil.circle.fill", tag: 2),
-            setController(ViewController(), title: "", image: "circle.grid.hex", tag: 3),
+            setController(GroupsController(), title: "", image: "circle.grid.hex", tag: 3),
             setController(ViewController(), title: "", image: "person.2", tag: 4),
         ]
     }

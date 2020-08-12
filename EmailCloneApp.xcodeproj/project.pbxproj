@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CB43E38724DDD674007747BF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43E38524DDD674007747BF /* SearchCell.swift */; };
 		CB43E38824DDD674007747BF /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB43E38624DDD674007747BF /* SearchCell.xib */; };
+		CB582C0A24E471B80070060A /* GroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB582C0824E471B80070060A /* GroupsController.swift */; };
+		CB582C0B24E471B80070060A /* GroupsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB582C0924E471B80070060A /* GroupsController.xib */; };
+		CB582C0D24E478850070060A /* DataGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB582C0C24E478850070060A /* DataGroups.swift */; };
 		CB5A3E5624D30030000C3CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3E5524D30030000C3CDF /* AppDelegate.swift */; };
 		CB5A3E5824D30030000C3CDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3E5724D30030000C3CDF /* SceneDelegate.swift */; };
 		CB5A3E5F24D30031000C3CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5A3E5E24D30031000C3CDF /* Assets.xcassets */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		CB43E38524DDD674007747BF /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		CB43E38624DDD674007747BF /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		CB582C0824E471B80070060A /* GroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsController.swift; sourceTree = "<group>"; };
+		CB582C0924E471B80070060A /* GroupsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsController.xib; sourceTree = "<group>"; };
+		CB582C0C24E478850070060A /* DataGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGroups.swift; sourceTree = "<group>"; };
 		CB5A3E5224D30030000C3CDF /* EmailCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5A3E5524D30030000C3CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5A3E5724D30030000C3CDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB582C0724E471810070060A /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				CB582C0824E471B80070060A /* GroupsController.swift */,
+				CB582C0924E471B80070060A /* GroupsController.xib */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
 		CB5A3E4924D30030000C3CDF = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +112,7 @@
 		CB5A3E6924D31C73000C3CDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CB582C0724E471810070060A /* Groups */,
 				CB5A3E6C24D31CC2000C3CDF /* TabBarController.swift */,
 				CB5A3E6E24D340A3000C3CDF /* ViewController.swift */,
 				CBCF9A1624D345CE0012935A /* HomeVC.swift */,
@@ -126,6 +142,7 @@
 			children = (
 				CBCF9A1A24D35A360012935A /* DataParser.swift */,
 				CBCF9A1C24D35AF90012935A /* DataResult.swift */,
+				CB582C0C24E478850070060A /* DataGroups.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBCF9A2524D4B6250012935A /* UserCollectionCell.xib in Resources */,
+				CB582C0B24E471B80070060A /* GroupsController.xib in Resources */,
 				CBE07E7724DC8CDA008E9FA2 /* SearchController.xib in Resources */,
 				CB5A3E6224D30031000C3CDF /* LaunchScreen.storyboard in Resources */,
 				CBCF9A2124D4B54C0012935A /* HomeViewCell.xib in Resources */,
@@ -207,6 +225,8 @@
 			files = (
 				CB5A3E6D24D31CC2000C3CDF /* TabBarController.swift in Sources */,
 				CB43E38724DDD674007747BF /* SearchCell.swift in Sources */,
+				CB582C0A24E471B80070060A /* GroupsController.swift in Sources */,
+				CB582C0D24E478850070060A /* DataGroups.swift in Sources */,
 				CBCF9A2024D4B54C0012935A /* HomeViewCell.swift in Sources */,
 				CBCF9A1824D345CE0012935A /* HomeVC.swift in Sources */,
 				CBCF9A1B24D35A360012935A /* DataParser.swift in Sources */,
