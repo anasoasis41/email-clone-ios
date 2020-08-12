@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="iconSearch" destination="TRc-AT-0tU" id="Fru-CX-eN7"/>
                 <outlet property="imageGroup" destination="xr4-6Y-mNc" id="j3C-OK-eeF"/>
+                <outlet property="navView" destination="C2w-5D-TrH" id="Uus-uF-mhi"/>
                 <outlet property="tableView" destination="1SI-re-s9B" id="3oP-7z-QZj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -63,7 +64,7 @@
                     <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1SI-re-s9B">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1SI-re-s9B">
                     <rect key="frame" x="0.0" y="132" width="414" height="730"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>

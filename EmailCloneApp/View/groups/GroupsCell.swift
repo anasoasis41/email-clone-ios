@@ -10,13 +10,15 @@ import UIKit
 
 class GroupsCell: UITableViewCell {
 
-    
     @IBOutlet weak var imageGroup: UIImageView!
     @IBOutlet weak var nameGroupLbl: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func setupTableView(_ group: Groups) {
+        imageGroup.image = group.image
+        imageGroup.setRounded()
+        imageGroup.clipsToBounds = true
+        
+        nameGroupLbl.text = group.name
     }
     
 }
